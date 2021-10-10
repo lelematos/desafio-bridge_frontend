@@ -17,6 +17,20 @@
   align-items: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formAndResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
 .footer {
   width: 100%;
   height: 100px;
@@ -24,6 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1.3rem;
 }
 
 .footer a {
@@ -56,8 +71,10 @@
 }
 
 .description {
+  max-width: 750px;
+  text-align: left;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .code {
@@ -75,7 +92,7 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
-  margin-top: 3rem;
+  margin: 0.2rem 0;
 }
 
 .card {
@@ -84,10 +101,66 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
+  box-shadow: 0 0 0 1.5px #eaeaea;
+  border-radius: 8px;
   transition: color 0.15s ease, border-color 0.15s ease;
   width: 45%;
+}
+
+.input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 0 0 1.5px #eaeaea;
+  border-radius: 8px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 45%;
+}
+
+.inputWithError {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 0 0 1.5px #e05c5e;
+  border-radius: 8px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  width: 45%;
+}
+
+.inputError {
+  max-width: 700px;
+}
+
+.cardResult {
+  margin: 1rem;
+  padding: 0.5rem 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 0 0 1.5px #72f78d;
+  border-radius: 8px;
 }
 
 .card:hover,
@@ -106,11 +179,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {

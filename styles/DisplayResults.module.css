@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 0 0 0.2rem #72f78d; */
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.indicador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+
+  border-radius: 10px;
+  box-shadow: 2px 5px 17px 4px rgba(208, 208, 208, 0.87);
+}
+
+.tituloIndicador {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.sucessoIndicador {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #72f78d;
+}
+
+.erroIndicador {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e05c5e;
+}
