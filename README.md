@@ -30,3 +30,4 @@ Bom, a interface da aplicação ficou bem simples, e não me preocupei muito com
 - Implementar o histórico de consultas ao backend (falta de tempo)
 - Implementar Typescript
 - Refinar o código
+- Permitir a escolha do número máximo de tentativas (já implementado no backend)
