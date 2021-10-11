@@ -1,6 +1,7 @@
 # Desafio Bridge_
 
-Este é um projeto que utiliza o [Next.js](https://nextjs.org/) como framwork, e foi criado com o auxílio do pacote [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este é um projeto que utiliza o [Next.js](https://nextjs.org/) como framwork, e foi criado com o auxílio do pacote [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Apesar de não estar integrada com o backend, foi publicada uma versão da interface em
+[https://desafio-bridge.vercel.app/](https://desafio-bridge.vercel.app/) que não irá funcionar justamente pois não conseguir fazer o deploy do backend e sua devida intergração.
 
 ## Inicializando a aplicação (Local)
 
@@ -27,3 +28,5 @@ Bom, a interface da aplicação ficou bem simples, e não me preocupei muito com
 - Implementar uma interface de loading
 - Tratar os erros da requisição
 - Implementar o histórico de consultas ao backend (falta de tempo)
+- Implementar Typescript
+- Refinar o código
