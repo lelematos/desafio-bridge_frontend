@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Bridge_
 
-## Getting Started
+Este é um projeto que utiliza o [Next.js](https://nextjs.org/) como framwork, e foi criado com o auxílio do pacote [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+## Inicializando a aplicação (Local)
+
+Como já deve imaginar, você deve primeiramente clonar este projeto para sua máquina e em seguida, em uma nova janela do terminal de sua preferência, executar o comando `yarn` para que as dependências do projetos sejam instaladas. Feito isso você pode rodar sua aplicação executando um dos seguintes comandos:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Assim que a compilação estiver finalizada, abra [http://localhost:3000](http://localhost:3000) no seu navegador e veja o resultado.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Sobre a aplicação
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Foi solicitado o desenvolvimento de uma `PWA` que se comunicasse com uma API desenvolvida em `Kotlin + SpringBoot`. No frontend o usuário deveria conseguir escrever um número maior ou igual a 100 em um campo de input. Com o envio do formulário, uma requisição deveria ser enviada à API, e tanto o menor multiplo duodigito do número escolhido pelo usuário quanto o tempo que foi necessário para realizar tal cálculo deveriam ser retornados. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Bom, a interface da aplicação ficou bem simples, e não me preocupei muito com questões estéticas. Decidi utilizar o Next.js definitivamente por sua facilidade de deploy, e pela fácil integração com a biblioteca [`next-pwa`](https://github.com/shadowwalker/next-pwa) que me permitiu transformar minha aplicação comum em uma *Progressive Web Application*. Implementei o tratamento de erro para o input, e criei uma ui de apresentação dos resultados que mostra alguns dados que considerei interessantes. 
 
-## Learn More
+## Melhorias
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Refinar a interface de usuário
+- Utilizar uma biblioteca de estilização (tailwind ou styled-components seriam minhas preferências)
+- Implementar uma interface de loading
+- Tratar os erros da requisição
+- Implementar o histórico de consultas ao backend (falta de tempo)
